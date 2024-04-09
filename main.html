@@ -1,0 +1,147 @@
+
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>Flex-practice</title>
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<div class="expanse_new__button" data-modal-target="#popup_new_expanse">&plus;</div>
+	<div class="popup_new_expanse popup" id="popup_new_expanse">
+		<div class="popup_new_expanse__title_wrapper">
+			<h2 class="popup_new_expanse__title">Add new expanse</h2>
+		</div>
+		<div class="popup_new_expanse__input">
+			<div class="popup_new_expanse__input_category popup_wrapper">
+				<label for="category">Choose category:</label>
+				<select name="category" id="category">
+
+				</select>
+			</div>
+			<div class="popup_new_expanse__input_subcategory popup_wrapper">
+				<label for="subcategory">Choose sub-category</label>
+				<select name="subcategory" id="subcategory">
+				</select>
+			</div>
+			<div class="popup_new_expanse__input_date popup_wrapper">
+				<label for="date">Date of expanse:</label>
+				<input type="date" id="date" name="date" placeholder="dd-mm-yyyy">
+			</div>
+
+			<div class="popup_new_expanse__input_amount popup_wrapper">
+				<label for="amount">Amount:</label>
+				<input type="number" id="amount" min="0" max="100 000" />
+			</div>
+			<div class="popup_new_expanse__input_description popup_wrapper">
+				<label for="description">Description</label>
+				<textarea id="description" rows="2" cols = "33" maxlength="100"></textarea>
+			</div>
+		</div>
+		<div class="popup_new_expanse__buttons">
+			<div class="popup_new_expanse__buttons_cancel close-button"
+				data-close-button>Cancel</div>
+			<div class="popup_new_expanse__buttons_save" id="expanse_save">Save</div>
+		</div>
+			
+	</div>
+	<div id="overlay"></div>
+	  
+	<header class="header">
+		<div class="header__logo">
+			<img class="nav__logo" src="img/color_wallet_25percent.png" alt="Logo">
+		</div>
+		<nav class="header__menu">
+				<div class="menu__user_name">
+					<p>Hello User</p>
+				</div>
+		</nav>
+	</header>
+	<div class="wrapper">
+		<div class="content">	
+			<div class="first_test">
+				<p>Home page, resopnse should appear below</p>
+				<p id="result_block">Fuch you, go to log in page</p>
+			</div>
+		</div>
+		
+		<div class="what">
+			<div class="container">
+
+				<div class="what__row">
+					<div class="what__text">
+						<div class="what__title">Diagram</div>
+					</div>
+					<div class="what__graphics">
+						<div class="what__chart">
+							<canvas id="barChart"></canvas>
+						</div>
+						<div class="what__chart">
+							<canvas id="doughnut" ></canvas>
+						</div>	
+					</div>
+				</div>
+				<script>
+					
+					</script>
+			</div>
+		</div>
+		<div class="columns">
+			<div class="container">
+				<div class="columns__title title">Recent expances</div>
+				<div class="columns__row" id="columns__row">	
+					<!-- <div class="columns__column">
+						<div class="columns__item item">		
+							<div class="item__icon_name">
+								<div class="item__icon">&&</div>
+								<div class="item__name">Category 1</div>
+								<div class="item__name">Subcategory 1</div>
+							</div>
+							<div class="item__date_amount">
+								<div class="item__date">today</div>
+								<div class="item__amount">50.00</div>
+							</div>
+						</div>
+					</div>				 -->
+				</div>
+			</div>
+		</div>
+		<div class="hi">
+			<div class="container">
+				<div class="hi__row">
+					<div class="hi__body">
+						<div class="hi__title">Havn't decided what to do here</div>
+						<ul class="hi__list">
+							<li>У тебя все получится!</li>
+							<li>Никогда не сдавайся!</li>
+							<li>Сегодня ты уже знаешь больше чем вчера!</li>
+							<li>Спасибо тебе за поддержку!</li>
+						</ul>
+					</div>
+					<div class="hi__image">
+						<img src="img/flex_image_header.png" alt="header_image">
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer_text">
+						Фрилансер по жизни 2019
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/chart_1.js"></script>
+	<script src="js/chart_2.js"></script>
+	<script type="text/javascript" src="js/script_main.js"></script>
+</body>
+</html>
